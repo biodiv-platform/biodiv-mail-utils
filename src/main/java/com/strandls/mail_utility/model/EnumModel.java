@@ -254,5 +254,35 @@ public class EnumModel {
 		}
 		return MAIL_TYPE.INVALID;
 	}
+	
+	public static enum NOTIFICATION_FIELDS {
+		TO("to"),
+		NOTIFICATION("notification");
+		
+		private String action; 
+		
+		private NOTIFICATION_FIELDS(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
+	
+	public static enum NOTIFICATION_DATA {
+		TITLE("notification.title"),
+		BODY("notification.body");
+		
+		private String action;
+		
+		private NOTIFICATION_DATA(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
 
 }
