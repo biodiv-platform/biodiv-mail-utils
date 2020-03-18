@@ -140,6 +140,7 @@ public class EnumModel {
 		FOLLOWER_NAME("follower.name"),
 		GIVEN_NAME_ID("givenName.id"),
 		GIVEN_NAME_NAME("givenName.name"),
+		GIVEN_NAME_IS_SCIENTIFIC_NAME("givenName.isScientificName"),
 		MEMBER_OF_WEBADDRESS("memberOf.webaddress"),
 		MEMBER_OF_ICON("memberOf.icon"),
 		MEMBER_OF_NAME("memberOf.name"),
