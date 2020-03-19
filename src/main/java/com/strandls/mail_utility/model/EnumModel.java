@@ -121,7 +121,8 @@ public class EnumModel {
 		WHAT_POSTED_LOCATION("whatPosted.location"),
 		WHAT_POSTED_OBSERVED_ON("whatPosted.observedOn"),
 		WHAT_POSTED_USERGROUPS("whatPosted.userGroups"),
-		WHERE_POSTED("wherePosted"),
+		WHERE_WEB_ADDRESS("where.webAddress"),
+		WHERE_USER_GROUPNAME("where.userGroupName"),
 		SUBMIT_TYPE("submitType"),
 		TYPE("type");
 		
