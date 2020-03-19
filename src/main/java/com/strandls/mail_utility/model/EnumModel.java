@@ -28,6 +28,7 @@ public class EnumModel {
 		TAGGED_MAIL("TAGGED_MAIL"),
 		COMMENT_POST("COMMENT_POST"),
 		POST_TO_GROUP("POST_TO_GROUP"),
+		FACT_UPDATED("FACT_UPDATED"),
 		SUGGEST_MAIL("SUGGEST_MAIL");
 		
 		private String action;
