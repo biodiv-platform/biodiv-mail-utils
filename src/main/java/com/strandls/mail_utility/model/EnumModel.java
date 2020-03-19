@@ -122,6 +122,7 @@ public class EnumModel {
 		WHAT_POSTED_OBSERVED_ON("whatPosted.observedOn"),
 		WHAT_POSTED_USERGROUPS("whatPosted.userGroups"),
 		WHERE_POSTED("wherePosted"),
+		SUBMIT_TYPE("submitType"),
 		TYPE("type");
 		
 		private String action;
