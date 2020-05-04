@@ -303,5 +303,21 @@ public class EnumModel {
 			return action;
 		}
 	};
+	
+	public static enum MY_UPLOADS_DELETE_MAIL {
+		USERNAME("username"),
+		FROM_DATE("fromDate"),
+		TO_DATE("toDate");
+		
+		private String action;
+		
+		private MY_UPLOADS_DELETE_MAIL(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
 
 }
