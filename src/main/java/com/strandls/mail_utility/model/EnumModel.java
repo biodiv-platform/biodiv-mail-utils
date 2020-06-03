@@ -290,8 +290,8 @@ public class EnumModel {
 	};
 	
 	public static enum NOTIFICATION_DATA {
-		TITLE("notification.title"),
-		BODY("notification.body");
+		TITLE("title"),
+		BODY("body");
 		
 		private String action;
 		
