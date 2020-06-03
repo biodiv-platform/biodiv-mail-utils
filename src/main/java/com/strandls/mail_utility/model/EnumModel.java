@@ -6,6 +6,7 @@ public class EnumModel {
 		TO("to"),
 		TYPE("type"),
 		DATA("data"),
+		CONTENT("content"),
 		SUBJECT("subject");
 		
 		private String action;
@@ -42,7 +43,8 @@ public class EnumModel {
 		REMOVED_SPECIES("REMOVED_SPECIES"),
 		FEATURED_POST("FEATURED_POST"),
 		FEATURED_POST_IBP("FEATURED_POST_IBP"),
-		SUGGEST_MAIL("SUGGEST_MAIL");
+		SUGGEST_MAIL("SUGGEST_MAIL"),
+		MY_UPLOADS_DELETE_MAIL("MY_UPLOADS_DELETE_MAIL");
 		
 		private String action;
 		
@@ -294,6 +296,22 @@ public class EnumModel {
 		private String action;
 		
 		private NOTIFICATION_DATA(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
+	
+	public static enum MY_UPLOADS_DELETE_MAIL {
+		USERNAME("username"),
+		FROM_DATE("fromDate"),
+		TO_DATE("toDate");
+		
+		private String action;
+		
+		private MY_UPLOADS_DELETE_MAIL(String action) {
 			this.action = action;
 		}
 		
