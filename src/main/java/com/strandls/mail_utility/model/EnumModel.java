@@ -320,5 +320,22 @@ public class EnumModel {
 			return action;
 		}
 	};
+	
+	public static enum INVITATION_DATA {
+		INVITEE_NAME("name"),
+		INVITER_OBJ("inviter"),
+		GROUP_OBJ("group"),
+		ROLE("role");
+		
+		private String action;
+		
+		private INVITATION_DATA(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
 
 }
