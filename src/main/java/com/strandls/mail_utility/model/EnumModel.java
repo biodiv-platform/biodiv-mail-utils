@@ -326,6 +326,7 @@ public class EnumModel {
 		INVITER_OBJ("inviter"),
 		GROUP_OBJ("group"),
 		ROLE("role"),
+		SERVER_URL("serverUrl"),
 		ENCRYPTED_KEY("encrypted_key");
 		
 		private String action;
