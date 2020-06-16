@@ -249,8 +249,7 @@ public class EnumModel {
 	};
 	
 	public static enum DOWNLOAD_MAIL {
-		DOWNLOAD_MAIL_ID("downloadMail.id"),
-		DOWNLOAD_MAIL_NAME("downloadMail.name"),
+		USER_DATA("downloadMail"),
 		SITENAME("siteName"),
 		SERVER_URL("serverUrl"),
 		TYPE("type");
