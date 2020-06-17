@@ -45,6 +45,7 @@ public class EnumModel {
 		FEATURED_POST_IBP("FEATURED_POST_IBP"),
 		SUGGEST_MAIL("SUGGEST_MAIL"),
 		SEND_INVITE("SEND_INVITE"),
+		SEND_REQUEST("SEND_REQUEST"),
 		MY_UPLOADS_DELETE_MAIL("MY_UPLOADS_DELETE_MAIL");
 		
 		private String action;
@@ -331,6 +332,23 @@ public class EnumModel {
 		private String action;
 		
 		private INVITATION_DATA(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
+	
+	public static enum REQUEST_DATA {
+		REQUESTEE_NAME("requestee_name"),
+		REQUESTOR_NAME("requestor_name"),
+		GROUP_NAME("group_name"),	
+		ENCRYPTED_KEY("encrypted_key");
+		
+		private String action;
+		
+		private REQUEST_DATA(String action) {
 			this.action = action;
 		}
 		
