@@ -341,7 +341,7 @@ public class EnumModel {
 	};
 	
 	public static enum REQUEST_DATA {
-		REQUESTEE("requestee"),
+		REQUESTEE_NAME("name"),
 		REQUESTOR("requestor"),
 		GROUP("group"),
 		SERVER_URL("serverUrl"),
