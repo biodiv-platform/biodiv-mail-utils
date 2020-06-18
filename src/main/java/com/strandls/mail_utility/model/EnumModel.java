@@ -341,9 +341,10 @@ public class EnumModel {
 	};
 	
 	public static enum REQUEST_DATA {
-		REQUESTEE_NAME("requestee_name"),
-		REQUESTOR_NAME("requestor_name"),
-		GROUP_NAME("group_name"),	
+		REQUESTEE("requestee"),
+		REQUESTOR("requestor"),
+		GROUP("group"),
+		SERVER_URL("serverUrl"),
 		ENCRYPTED_KEY("encrypted_key");
 		
 		private String action;
