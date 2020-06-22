@@ -253,6 +253,8 @@ public class EnumModel {
 		USER_DATA("downloadMail"),
 		SITENAME("siteName"),
 		SERVER_URL("serverUrl"),
+		DOWNLOAD_TYPE("download_type"),
+		DOWNLOAD_FILE("download_file"),
 		TYPE("type");
 		
 		private String action;
