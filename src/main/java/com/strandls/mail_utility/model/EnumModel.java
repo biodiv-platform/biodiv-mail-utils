@@ -6,6 +6,7 @@ public class EnumModel {
 		TO("to"),
 		TYPE("type"),
 		DATA("data"),
+		CONTENT("content"),
 		SUBJECT("subject");
 		
 		private String action;
@@ -42,7 +43,10 @@ public class EnumModel {
 		REMOVED_SPECIES("REMOVED_SPECIES"),
 		FEATURED_POST("FEATURED_POST"),
 		FEATURED_POST_IBP("FEATURED_POST_IBP"),
-		SUGGEST_MAIL("SUGGEST_MAIL");
+		SUGGEST_MAIL("SUGGEST_MAIL"),
+		SEND_INVITE("SEND_INVITE"),
+		SEND_REQUEST("SEND_REQUEST"),
+		MY_UPLOADS_DELETE_MAIL("MY_UPLOADS_DELETE_MAIL");
 		
 		private String action;
 		
@@ -246,10 +250,11 @@ public class EnumModel {
 	};
 	
 	public static enum DOWNLOAD_MAIL {
-		DOWNLOAD_MAIL_ID("downloadMail.id"),
-		DOWNLOAD_MAIL_NAME("downloadMail.name"),
+		USER_DATA("downloadMail"),
 		SITENAME("siteName"),
 		SERVER_URL("serverUrl"),
+		DOWNLOAD_TYPE("download_type"),
+		DOWNLOAD_FILE("download_file"),
 		TYPE("type");
 		
 		private String action;
@@ -288,12 +293,65 @@ public class EnumModel {
 	};
 	
 	public static enum NOTIFICATION_DATA {
-		TITLE("notification.title"),
-		BODY("notification.body");
+		TITLE("title"),
+		BODY("body");
 		
 		private String action;
 		
 		private NOTIFICATION_DATA(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
+	
+	public static enum MY_UPLOADS_DELETE_MAIL {
+		USERNAME("username"),
+		FROM_DATE("fromDate"),
+		TO_DATE("toDate");
+		
+		private String action;
+		
+		private MY_UPLOADS_DELETE_MAIL(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
+	
+	public static enum INVITATION_DATA {
+		INVITEE_NAME("name"),
+		INVITER_OBJ("inviter"),
+		GROUP_OBJ("group"),
+		ROLE("role"),
+		SERVER_URL("serverUrl"),
+		ENCRYPTED_KEY("encrypted_key");
+		
+		private String action;
+		
+		private INVITATION_DATA(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	};
+	
+	public static enum REQUEST_DATA {
+		REQUESTEE_NAME("name"),
+		REQUESTOR("requestor"),
+		GROUP("group"),
+		SERVER_URL("serverUrl"),
+		ENCRYPTED_KEY("encrypted_key");
+		
+		private String action;
+		
+		private REQUEST_DATA(String action) {
 			this.action = action;
 		}
 		
