@@ -294,7 +294,8 @@ public class EnumModel {
 	
 	public static enum NOTIFICATION_DATA {
 		TITLE("title"),
-		BODY("body");
+		BODY("body"),
+		ICON("icon");
 		
 		private String action;
 		
