@@ -29,6 +29,7 @@ public class EnumModel {
 		TAGGED_MAIL("TAGGED_MAIL"),
 		COMMENT_POST("COMMENT_POST"),
 		POST_TO_GROUP("POST_TO_GROUP"),
+		FACT_ADDED("FACT_ADDED"),
 		FACT_UPDATED("FACT_UPDATED"),
 		TAG_UPDATED("TAG_UPDATED"),
 		CUSTOM_FIELD_UPDATED("CUSTOM_FIELD_UPDATED"),
@@ -294,7 +295,9 @@ public class EnumModel {
 	
 	public static enum NOTIFICATION_DATA {
 		TITLE("title"),
-		BODY("body");
+		BODY("body"),
+		ICON("icon"),
+		CLICK_ACTION("click_action");
 		
 		private String action;
 		
