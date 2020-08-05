@@ -5,6 +5,7 @@ public class EnumModel {
 	public static enum FIELDS {
 		TO("to"),
 		TYPE("type"),
+		SUBSCRIPTION("subscription"),
 		DATA("data"),
 		CONTENT("content"),
 		SUBJECT("subject");
