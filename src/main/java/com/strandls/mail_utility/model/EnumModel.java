@@ -2,9 +2,25 @@ package com.strandls.mail_utility.model;
 
 public class EnumModel {
 	
+	public static enum INFO_FIELDS {
+		TYPE("type"),
+		RECIPIENTS("recipients");
+		
+		private String action;
+		
+		private INFO_FIELDS(String action) {
+			this.action = action;
+		}
+		
+		public String getAction() {
+			return action;
+		}
+	}
+	
 	public static enum FIELDS {
 		TO("to"),
 		TYPE("type"),
+		SUBSCRIPTION("subscription"),
 		DATA("data"),
 		CONTENT("content"),
 		SUBJECT("subject");
