@@ -2,7 +2,27 @@ package com.strandls.mail_utility.model;
 
 public class EnumModel {
 	
-	public static enum INFO_FIELDS {
+	private EnumModel() {}
+
+	private static final String USER_NAME = "username";
+	private static final String FOLLOWER_ID_STR = "follower.id";
+	private static final String FOLLOWER_NAME_STR = "follower.name";
+	private static final String MEMBER_OF_WEBADDRESS_STR = "memberOf.webaddress";
+	private static final String MEMBER_OF_ICON_STR = "memberOf.icon";
+	private static final String MEMBER_OF_NAME_STR = "memberOf.name";
+	private static final String SITE_NAME = "siteName";
+	private static final String SERVER_URL_STR = "serverUrl";
+	private static final String WHO_POSTED_ID_STR = "whoPosted.id";
+	private static final String WHO_POSTED_ICON_STR = "whoPosted.icon";
+	private static final String WHO_POSTED_NAME_STR = "whoPosted.name";
+	private static final String WHAT_POSTED_ID_STR = "whatPosted.id";
+	private static final String WHAT_POSTED_NAME_STR = "whatPosted.name";
+	private static final String WHAT_POSTED_ICON_STR = "whatPosted.icon";
+	private static final String WHAT_POSTED_LOCATION_STR = "whatPosted.location";
+	private static final String WHAT_POSTED_OBSERVED_ON_STR = "whatPosted.observedOn";
+	private static final String WHAT_POSTED_USER_GROUPS_STR = "whatPosted.userGroups";
+	
+	public enum INFO_FIELDS {
 		TYPE("type"),
 		RECIPIENTS("recipients");
 		
@@ -17,7 +37,7 @@ public class EnumModel {
 		}
 	}
 	
-	public static enum FIELDS {
+	public enum FIELDS {
 		TO("to"),
 		TYPE("type"),
 		SUBSCRIPTION("subscription"),
@@ -34,9 +54,9 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum MAIL_TYPE {
+	public enum MAIL_TYPE {
 		INVALID("INVALID"),
 		USER_REGISTRATION("USER_REGISTRATION"),
 		RESET_PASSWORD("RESET_PASSWORD"),
@@ -74,10 +94,10 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum USER_REGISTRATION {
-		USERNAME("username"),
+	public enum USER_REGISTRATION {
+		USERNAME(USER_NAME),
 		OTP("otp"),
 		TYPE("type");
 		
@@ -90,10 +110,10 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum RESET_PASSWORD {
-		USERNAME("username"),
+	public enum RESET_PASSWORD {
+		USERNAME(USER_NAME),
 		OTP("otp"),
 		TYPE("type");
 		
@@ -106,26 +126,26 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum COMMENT_POST {
+	public enum COMMENT_POST {
 		COMMENT_BODY("commentBody"),
-		FOLLOWER_ID("follower.id"),
-		FOLLOWER_NAME("follower.name"),
-		MEMBER_OF_WEBADDRESS("memberOf.webaddress"),
-		MEMBER_OF_ICON("memberOf.icon"),
-		MEMBER_OF_NAME("memberOf.name"),
-		SITENAME("siteName"),
-		SERVER_URL("serverUrl"),
-		WHO_POSTED_ID("whoPosted.id"),
-		WHO_POSTED_ICON("whoPosted.icon"),
-		WHO_POSTED_NAME("whoPosted.name"),
-		WHAT_POSTED_ID("whatPosted.id"),
-		WHAT_POSTED_ICON("whatPosted.icon"),
-		WHAT_POSTED_NAME("whatPosted.name"),
-		WHAT_POSTED_LOCATION("whatPosted.location"),
-		WHAT_POSTED_OBSERVED_ON("whatPosted.observedOn"),
-		WHAT_POSTED_USERGROUPS("whatPosted.userGroups"),
+		FOLLOWER_ID(FOLLOWER_ID_STR),
+		FOLLOWER_NAME(FOLLOWER_NAME_STR),
+		MEMBER_OF_WEBADDRESS(MEMBER_OF_WEBADDRESS_STR),
+		MEMBER_OF_ICON(MEMBER_OF_ICON_STR),
+		MEMBER_OF_NAME(MEMBER_OF_NAME_STR),
+		SITENAME(SITE_NAME),
+		SERVER_URL(SERVER_URL_STR),
+		WHO_POSTED_ID(WHO_POSTED_ID_STR),
+		WHO_POSTED_ICON(WHO_POSTED_ICON_STR),
+		WHO_POSTED_NAME(WHO_POSTED_NAME_STR),
+		WHAT_POSTED_ID(WHAT_POSTED_ID_STR),
+		WHAT_POSTED_ICON(WHAT_POSTED_ICON_STR),
+		WHAT_POSTED_NAME(WHAT_POSTED_NAME_STR),
+		WHAT_POSTED_LOCATION(WHAT_POSTED_LOCATION_STR),
+		WHAT_POSTED_OBSERVED_ON(WHAT_POSTED_OBSERVED_ON_STR),
+		WHAT_POSTED_USERGROUPS(WHAT_POSTED_USER_GROUPS_STR),
 		TYPE("type");
 		
 		private String action;
@@ -137,25 +157,25 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum POST_TO_GROUP {
-		FOLLOWER_ID("follower.id"),
-		FOLLOWER_NAME("follower.name"),
-		MEMBER_OF_WEBADDRESS("memberOf.webaddress"),
-		MEMBER_OF_ICON("memberOf.icon"),
-		MEMBER_OF_NAME("memberOf.name"),
-		SITENAME("siteName"),
-		SERVER_URL("serverUrl"),
-		WHO_POSTED_ID("whoPosted.id"),
-		WHO_POSTED_ICON("whoPosted.icon"),
-		WHO_POSTED_NAME("whoPosted.name"),
-		WHAT_POSTED_ID("whatPosted.id"),
-		WHAT_POSTED_ICON("whatPosted.icon"),
-		WHAT_POSTED_NAME("whatPosted.name"),
-		WHAT_POSTED_LOCATION("whatPosted.location"),
-		WHAT_POSTED_OBSERVED_ON("whatPosted.observedOn"),
-		WHAT_POSTED_USERGROUPS("whatPosted.userGroups"),
+	public enum POST_TO_GROUP {
+		FOLLOWER_ID(FOLLOWER_ID_STR),
+		FOLLOWER_NAME(FOLLOWER_NAME_STR),
+		MEMBER_OF_WEBADDRESS(MEMBER_OF_WEBADDRESS_STR),
+		MEMBER_OF_ICON(MEMBER_OF_ICON_STR),
+		MEMBER_OF_NAME(MEMBER_OF_NAME_STR),
+		SITENAME(SITE_NAME),
+		SERVER_URL(SERVER_URL_STR),
+		WHO_POSTED_ID(WHO_POSTED_ID_STR),
+		WHO_POSTED_ICON(WHO_POSTED_ICON_STR),
+		WHO_POSTED_NAME(WHO_POSTED_NAME_STR),
+		WHAT_POSTED_ID(WHAT_POSTED_ID_STR),
+		WHAT_POSTED_ICON(WHAT_POSTED_ICON_STR),
+		WHAT_POSTED_NAME(WHAT_POSTED_NAME_STR),
+		WHAT_POSTED_LOCATION(WHAT_POSTED_LOCATION_STR),
+		WHAT_POSTED_OBSERVED_ON(WHAT_POSTED_OBSERVED_ON_STR),
+		WHAT_POSTED_USERGROUPS(WHAT_POSTED_USER_GROUPS_STR),
 		WHERE_WEB_ADDRESS("where.webAddress"),
 		WHERE_USER_GROUPNAME("where.userGroupName"),
 		SUBMIT_TYPE("submitType"),
@@ -170,29 +190,29 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}		
-	};
+	}
 	
-	public static enum SUGGEST_MAIL {
-		FOLLOWER_ID("follower.id"),
-		FOLLOWER_NAME("follower.name"),
+	public enum SUGGEST_MAIL {
+		FOLLOWER_ID(FOLLOWER_ID_STR),
+		FOLLOWER_NAME(FOLLOWER_NAME_STR),
 		GIVEN_NAME_ID("givenName.id"),
 		GIVEN_NAME_NAME("givenName.name"),
 		GIVEN_NAME_IS_SCIENTIFIC_NAME("givenName.isScientificName"),
-		MEMBER_OF_WEBADDRESS("memberOf.webaddress"),
-		MEMBER_OF_ICON("memberOf.icon"),
-		MEMBER_OF_NAME("memberOf.name"),
+		MEMBER_OF_WEBADDRESS(MEMBER_OF_WEBADDRESS_STR),
+		MEMBER_OF_ICON(MEMBER_OF_ICON_STR),
+		MEMBER_OF_NAME(MEMBER_OF_NAME_STR),
 		RECO_VOTE("recoVote"),
-		SITENAME("siteName"),
-		SERVER_URL("serverUrl"),
-		WHO_POSTED_ID("whoPosted.id"),
-		WHO_POSTED_ICON("whoPosted.icon"),
-		WHO_POSTED_NAME("whoPosted.name"),
-		WHAT_POSTED_ID("whatPosted.id"),
-		WHAT_POSTED_ICON("whatPosted.icon"),
-		WHAT_POSTED_NAME("whatPosted.name"),
-		WHAT_POSTED_LOCATION("whatPosted.location"),
-		WHAT_POSTED_OBSERVED_ON("whatPosted.observedOn"),
-		WHAT_POSTED_USERGROUPS("whatPosted.userGroups"),
+		SITENAME(SITE_NAME),
+		SERVER_URL(SERVER_URL_STR),
+		WHO_POSTED_ID(WHO_POSTED_ID_STR),
+		WHO_POSTED_ICON(WHO_POSTED_ICON_STR),
+		WHO_POSTED_NAME(WHO_POSTED_NAME_STR),
+		WHAT_POSTED_ID(WHAT_POSTED_ID_STR),
+		WHAT_POSTED_ICON(WHAT_POSTED_ICON_STR),
+		WHAT_POSTED_NAME(WHAT_POSTED_NAME_STR),
+		WHAT_POSTED_LOCATION(WHAT_POSTED_LOCATION_STR),
+		WHAT_POSTED_OBSERVED_ON(WHAT_POSTED_OBSERVED_ON_STR),
+		WHAT_POSTED_USERGROUPS(WHAT_POSTED_USER_GROUPS_STR),
 		TYPE("type");
 		
 		private String action;
@@ -204,26 +224,26 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}			
-	};
+	}
 	
-	public static enum TAGGED_MAIL {
+	public enum TAGGED_MAIL {
 		COMMENT_BODY("commentBody"),
-		FOLLOWER_ID("follower.id"),
-		FOLLOWER_NAME("follower.name"),
-		MEMBER_OF_WEBADDRESS("memberOf.webaddress"),
-		MEMBER_OF_ICON("memberOf.icon"),
-		MEMBER_OF_NAME("memberOf.name"),
-		SITENAME("siteName"),
-		SERVER_URL("serverUrl"),
-		WHO_POSTED_ID("whoPosted.id"),
-		WHO_POSTED_ICON("whoPosted.icon"),
-		WHO_POSTED_NAME("whoPosted.name"),
-		WHAT_POSTED_ID("whatPosted.id"),
-		WHAT_POSTED_ICON("whatPosted.icon"),
-		WHAT_POSTED_NAME("whatPosted.name"),
-		WHAT_POSTED_LOCATION("whatPosted.location"),
-		WHAT_POSTED_OBSERVED_ON("whatPosted.observedOn"),
-		WHAT_POSTED_USERGROUPS("whatPosted.userGroups"),
+		FOLLOWER_ID(FOLLOWER_ID_STR),
+		FOLLOWER_NAME(FOLLOWER_NAME_STR),
+		MEMBER_OF_WEBADDRESS(MEMBER_OF_WEBADDRESS_STR),
+		MEMBER_OF_ICON(MEMBER_OF_ICON_STR),
+		MEMBER_OF_NAME(MEMBER_OF_NAME_STR),
+		SITENAME(SITE_NAME),
+		SERVER_URL(SERVER_URL_STR),
+		WHO_POSTED_ID(WHO_POSTED_ID_STR),
+		WHO_POSTED_ICON(WHO_POSTED_ICON_STR),
+		WHO_POSTED_NAME(WHO_POSTED_NAME_STR),
+		WHAT_POSTED_ID(WHAT_POSTED_ID_STR),
+		WHAT_POSTED_ICON(WHAT_POSTED_ICON_STR),
+		WHAT_POSTED_NAME(WHAT_POSTED_NAME_STR),
+		WHAT_POSTED_LOCATION(WHAT_POSTED_LOCATION_STR),
+		WHAT_POSTED_OBSERVED_ON(WHAT_POSTED_OBSERVED_ON_STR),
+		WHAT_POSTED_USERGROUPS(WHAT_POSTED_USER_GROUPS_STR),
 		TYPE("type");	
 		
 		private String action;
@@ -235,16 +255,16 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}			
-	};
+	}
 	
-	public static enum WELCOME_MAIL {
+	public enum WELCOME_MAIL {
 		FACEBOOK_URL("facebookUrl"),
 		FEEDBACKFORM_URL("feedbackFormUrl"),
 		MAIL_DEFAULT_FROM("mailDefaultFrom"),
-		SITENAME("siteName"),
-		SERVER_URL("serverUrl"),
+		SITENAME(SITE_NAME),
+		SERVER_URL(SERVER_URL_STR),
 		TWITTER_URL("twitterUrl"),
-		USERNAME("username"),
+		USERNAME(USER_NAME),
 		USER_PROFILE_URL("userProfileUrl"),
 		WELCOME_EMAIL_INTRO("welcomeEmailIntro"),
 		WELCOME_EMAIL_OBSERVATION("welcomeEmailObservation"),
@@ -264,12 +284,12 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}	
-	};
+	}
 	
-	public static enum DOWNLOAD_MAIL {
+	public enum DOWNLOAD_MAIL {
 		USER_DATA("downloadMail"),
-		SITENAME("siteName"),
-		SERVER_URL("serverUrl"),
+		SITENAME(SITE_NAME),
+		SERVER_URL(SERVER_URL_STR),
 		DOWNLOAD_TYPE("download_type"),
 		DOWNLOAD_FILE("download_file"),
 		TYPE("type");
@@ -278,12 +298,12 @@ public class EnumModel {
 		
 		private DOWNLOAD_MAIL(String action) {
 			this.action = action;
-		};
+		}
 		
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
 	public static MAIL_TYPE getMailType(String type) {
 		for (MAIL_TYPE types: MAIL_TYPE.values()) {
@@ -294,7 +314,7 @@ public class EnumModel {
 		return MAIL_TYPE.INVALID;
 	}
 	
-	public static enum NOTIFICATION_FIELDS {
+	public enum NOTIFICATION_FIELDS {
 		TO("to"),
 		NOTIFICATION("notification");
 		
@@ -307,9 +327,9 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum NOTIFICATION_DATA {
+	public enum NOTIFICATION_DATA {
 		TITLE("title"),
 		BODY("body"),
 		ICON("icon"),
@@ -324,10 +344,10 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum MY_UPLOADS_DELETE_MAIL {
-		USERNAME("username"),
+	public enum MY_UPLOADS_DELETE_MAIL {
+		USERNAME(USER_NAME),
 		FROM_DATE("fromDate"),
 		TO_DATE("toDate");
 		
@@ -340,14 +360,14 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum INVITATION_DATA {
+	public enum INVITATION_DATA {
 		INVITEE_NAME("name"),
 		INVITER_OBJ("inviter"),
 		GROUP_OBJ("group"),
 		ROLE("role"),
-		SERVER_URL("serverUrl"),
+		SERVER_URL(SERVER_URL_STR),
 		ENCRYPTED_KEY("encrypted_key");
 		
 		private String action;
@@ -359,13 +379,13 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 	
-	public static enum REQUEST_DATA {
+	public enum REQUEST_DATA {
 		REQUESTEE_NAME("name"),
 		REQUESTOR("requestor"),
 		GROUP("group"),
-		SERVER_URL("serverUrl"),
+		SERVER_URL(SERVER_URL_STR),
 		ENCRYPTED_KEY("encrypted_key");
 		
 		private String action;
@@ -377,6 +397,6 @@ public class EnumModel {
 		public String getAction() {
 			return action;
 		}
-	};
+	}
 
 }

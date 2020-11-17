@@ -8,6 +8,8 @@ import com.github.wnameless.json.unflattener.JsonUnflattener;
 
 public class JsonUtil {
 	
+	private JsonUtil() {}
+	
 	public static String mapToJSON(Map<String, Object> data) {
 		return new JSONObject(data).toString();
 	}
