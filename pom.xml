@@ -6,8 +6,8 @@
 	<artifactId>mail-utility</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0</version>
-	<name>mail Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<name>biodiv-mail-utils</name>
+	<url>https://github.com/strandls/biodiv-mail-utils</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
