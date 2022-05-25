@@ -306,8 +306,8 @@ public class EnumModel {
 
 	public enum PERMISSION_REQUEST {
 
-		TAXON_ID("taxonId"), TAXON_NAME("taxonName"), REQUESTEE_NAME("name"), REQUESTEE_ID("requesteeId"),
-		REQUESTOR_NAME("requestorName"), ROLE("role"), ENCRYPTED_KEY("encrypted_key");
+		TAXON_ID("taxonId"), TAXON_NAME("taxonName"), REQUESTEE_NAME("name"), REQUESTEE_ID("requesteeId"), ROLE("role"),
+		ENCRYPTED_KEY("encrypted_key");
 
 		private String action;
 
