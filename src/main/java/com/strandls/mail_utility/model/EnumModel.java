@@ -20,6 +20,7 @@ public class EnumModel {
 	private static final String WHAT_POSTED_NAME_STR = "whatPosted.name";
 	private static final String WHAT_POSTED_ICON_STR = "whatPosted.icon";
 	private static final String WHAT_POSTED_TYPE_STR = "whatPosted.type";
+	private static final String WHAT_POSTED_SPECIES_STR = "whatPosted.group";
 	private static final String WHAT_POSTED_LOCATION_STR = "whatPosted.location";
 	private static final String WHAT_POSTED_OBSERVED_ON_STR = "whatPosted.observedOn";
 	private static final String WHAT_POSTED_USER_GROUPS_STR = "whatPosted.userGroups";
@@ -122,6 +123,7 @@ public class EnumModel {
 		MEMBER_OF_NAME(MEMBER_OF_NAME_STR), SITENAME(SITE_NAME), SERVER_URL(SERVER_URL_STR),
 		WHO_POSTED_ID(WHO_POSTED_ID_STR), WHO_POSTED_ICON(WHO_POSTED_ICON_STR), WHO_POSTED_NAME(WHO_POSTED_NAME_STR),
 		WHAT_POSTED_ID(WHAT_POSTED_ID_STR), WHAT_POSTED_ICON(WHAT_POSTED_ICON_STR),
+		WHAT_POSTED_SPECIES(WHAT_POSTED_SPECIES_STR),
 		WHAT_POSTED_TYPE(WHAT_POSTED_TYPE_STR), WHAT_POSTED_NAME(WHAT_POSTED_NAME_STR),
 		WHAT_POSTED_LOCATION(WHAT_POSTED_LOCATION_STR), WHAT_POSTED_OBSERVED_ON(WHAT_POSTED_OBSERVED_ON_STR),
 		WHAT_POSTED_USERGROUPS(WHAT_POSTED_USER_GROUPS_STR), TYPE("type");
