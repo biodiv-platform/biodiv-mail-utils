@@ -26,7 +26,7 @@ public class EnumModel {
 	private static final String WHAT_POSTED_USER_GROUPS_STR = "whatPosted.userGroups";
 
 	public enum INFO_FIELDS {
-		TYPE("type"), RECIPIENTS("recipients");
+		TYPE("type"),OBJECT_TYPE("objectType") ,RECIPIENTS("recipients");
 
 		private String action;
 
@@ -39,6 +39,19 @@ public class EnumModel {
 		}
 	}
 
+	
+	public enum OBJECT_TYPE{
+		INVALID("INVALID"),OBSERVATION("observation"),CCA("cca"),DOCUMENT("document") ,SPECIES("species");
+		private String action;
+
+		private OBJECT_TYPE(String action) {
+			this.action = action;
+		}
+
+		public String getAction() {
+			return action;
+		}
+	}
 	public enum FIELDS {
 		TO("to"), TYPE("type"), SUBSCRIPTION("subscription"), DATA("data"), CONTENT("content"), SUBJECT("subject");
 
