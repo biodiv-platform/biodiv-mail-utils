@@ -373,8 +373,8 @@ public class EnumModel {
 	public enum CCA_DATA_PERMISSION_REQUEST {
 
 		CCA_ID("ccaId"), CCA_NAME("ccaName"),
-		REQUESTEE_NAME("requestorName"), REQUESTEE_ID("requesteeId"), ROLE("role"),
-		ENCRYPTED_KEY("encrypted_key"),REQUESTOR_NAME("requestorName");
+		REQUESTEE_NAME("requestorName"), REQUESTEE_ID("requestorId"), ROLE("role"),
+		ENCRYPTED_KEY("encrypted_key"),REQUESTOR_NAME("requestorName"),SUMMARY("summary");
 
 		private String action;
 
