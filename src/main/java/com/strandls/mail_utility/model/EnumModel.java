@@ -369,12 +369,12 @@ public class EnumModel {
 			return action;
 		}
 	}
-	
+
 	public enum CCA_DATA_PERMISSION_REQUEST {
 
-		CCA_ID("ccaId"), CCA_NAME("ccaName"),
-		REQUESTEE_NAME("requestorName"), REQUESTEE_ID("requestorId"), ROLE("role"),
-		ENCRYPTED_KEY("encrypted_key"),REQUESTOR_NAME("requestorName"),SUMMARY("summary");
+		CCA_ID("ccaId"), CCA_NAME("ccaName"), REQUESTEE_NAME("requestorName"), REQUESTEE_ID("requestorId"),
+		ROLE("role"), ENCRYPTED_KEY("encrypted_key"), REQUESTOR_NAME("requestorName"), SUMMARY("summary"),
+		REQUESTOR_MESSAGE("requestor_message");
 
 		private String action;
 
