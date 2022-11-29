@@ -386,20 +386,4 @@ public class EnumModel {
 			return action;
 		}
 	}
-
-	public enum CCA_DATA_PERMISSION_GRANT {
-
-		CCA_ID("ccaId"), CCA_NAME("ccaName"), REQUESTEE_NAME("requestorName"), ROLE("role");
-
-		private String action;
-
-		private CCA_DATA_PERMISSION_GRANT(String action) {
-			this.action = action;
-		}
-
-		public String getAction() {
-			return action;
-		}
-	}
-
 }
