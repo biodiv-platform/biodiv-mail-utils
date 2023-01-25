@@ -4,6 +4,7 @@ import com.strandls.mail_utility.model.EnumModel.MAIL_TYPE;
 import com.strandls.mail_utility.model.EnumModel.OBJECT_TYPE;
 
 public final class AppUtil {
+//	TRANSFERING REPO TO BIODIV-PLATFORM
 	
 	private AppUtil() {}
 	
