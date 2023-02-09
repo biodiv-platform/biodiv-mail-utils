@@ -97,7 +97,7 @@ public class EnumModel {
 		PAGE_UPDATE("PAGE_UPDATE"), PAGE_DELETED("PAGE_DELETED"), PAGE_COMMENT_POST("PAGE_COMMENT_POST"),
 		PERMISSION_GRANTED("PERMISSION_GRANTED"), DATATABLE_CREATED("DATATABLE_CREATED"),
 		DATATABLE_DELETED("DATATABLE_DELETED"), DATATABLE_COMMENT_POST("DATATABLE_COMMENT_POST"),
-		DATATABLE_POST_TO_GROUP("DATATABLE_POST_TO_GROUP");
+		DATATABLE_POST_TO_GROUP("DATATABLE_POST_TO_GROUP"), ODK_USER_EMAIL("ODK_USER_EMAIL");
 
 		private String action;
 
@@ -379,6 +379,22 @@ public class EnumModel {
 		private String action;
 
 		private CCA_DATA_PERMISSION_REQUEST(String action) {
+			this.action = action;
+		}
+
+		public String getAction() {
+			return action;
+		}
+	}
+
+	public enum ODK_USER_EMAIL {
+
+		USER_ID("userId"), ODK_EMAIL("email"), PASSWORD("password"), ROLE("role"), PROJECT_ID("projectId"),
+		PROJECT_NAME("projectName"), SITENAME(SITE_NAME), SERVER_URL(SERVER_URL_STR), USER_NAME("name");
+
+		private String action;
+
+		private ODK_USER_EMAIL(String action) {
 			this.action = action;
 		}
 
