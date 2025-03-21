@@ -14,7 +14,7 @@
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 		<jax-rs-pac4j.version>2.3.0</jax-rs-pac4j.version>
-		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+		<maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
 		<maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
 		<swagger-ui.version>3.23.5</swagger-ui.version>
 		<maven-war-plugin.version>3.2.2</maven-war-plugin.version>
