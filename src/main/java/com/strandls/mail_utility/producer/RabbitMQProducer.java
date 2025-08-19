@@ -18,7 +18,7 @@ public class RabbitMQProducer {
 			throws IOException {
 		channel.basicPublish(exchange, routingKey, properties, message.getBytes(StandardCharsets.UTF_8));
 	}
-	
+
 	public void produceNotification(String exchange, String routingKey, BasicProperties properties, String message)
 			throws IOException {
 		channel.basicPublish(exchange, routingKey, properties, message.getBytes(StandardCharsets.UTF_8));
